@@ -21,10 +21,7 @@ function Header() {
   const search = (event) => {
     let newData = data.filter((el) => {
       if (
-        el.title.trim().indexOf(event.target.value.toLowerCase().trim()) >= 0
-      ) {
-        return el;
-      } else if (
+        el.title.trim().indexOf(event.target.value.toLowerCase().trim()) >= 0 ||
         el.content.trim().indexOf(event.target.value.toLowerCase().trim()) >= 0
       ) {
         return el;
